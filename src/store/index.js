@@ -1,21 +1,9 @@
 import { createStore } from 'vuex'
+import Products from '../data/Products'
 
 export default createStore({
   state: {
-    products: [
-      {
-        id: 1,
-        name: 'name 1',
-        image: 'https://placehold.jp/200x200.png',
-        price: 580
-      },
-      {
-        id: 2,
-        name: 'name 2',
-        image: 'https://placehold.jp/200x200.png',
-        price: 750
-      }
-    ],
+    products: Products,
     cart: []
   },
   mutations: {
